@@ -1,6 +1,16 @@
 const grid = document.getElementById("grid");
 const rangeInput = document.getElementById("range-input");
 
+const penColorBtn = document.getElementById("pen-color");
+const backgroundColorBtn = document.getElementById("background-color");
+const rainbowBtn = document.getElementById("rainbow");
+const lightenBtn = document.getElementById("lighten");
+const shadeBtn = document.getElementById("shade");
+const eraserBtn = document.getElementById("eraser");
+const toggleBtn = document.getElementById("toggle-grid");
+const clearBtn = document.getElementById("clear");
+
+
 let gridNumber;
 
 grid.addEventListener("mouseover", updateColor);
@@ -15,7 +25,6 @@ function updateColor(e){
     else{
             e.target.style.backgroundColor = "black"
     }
-    // if(e.type === "mousedown" && )
 
 }
 

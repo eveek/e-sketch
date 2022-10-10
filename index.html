@@ -9,8 +9,28 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>EVEEK's SKETCH</h1>
+    </header>
     <main>
-        <input type="range" min="1" max="60" value="16" id="range-input">
+        <div class="side-bar">
+            <div>
+                <input type="color" name="sketch-color" id="pen-color">
+                <input type="color" name="backgroung-color" id="backgroung-color">
+            </div>
+            <div>
+                <input type="button" class="input-btn" value="Toggle Rainbow" id="rainbow">
+                <input type="button" class="input-btn" value="Toggle Lighten" id="lighten">
+                <input type="button" class="input-btn" value="Toggle Shade" id="shade">
+                <input type="button" class="input-btn" value="Toggle Eraser" id="eraser">
+            </div>
+            <div>
+                <label for="grid-range">16 &times; 16</label>
+                <input name="grid-range" type="range" min="1" max="100" value="16" id="range-input">
+                <input type="button" value="Toggle Grid" class="input-btn" id="toggle-grid">
+                <input type="button" value="Clear" class="input-btn" id="clear">
+            </div>
+        </div>
         <div id="grid" class="grid"></div>
     </main>
 </body>
