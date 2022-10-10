@@ -103,21 +103,30 @@ label{
     text-align: center;
 }
 
+.grid-cover{
+    padding: 30px;
+    background-color: rgb(47, 176, 185);
+}
+
 .grid{
-    width: 630px;
-    height: 640px;
-    border: 30px solid rgb(47, 176, 185);
+    width: 600px;
+    height: 600px;
+    background-color: white;
     display: grid;
+    grid-gap: 0px;
 }
 
 .grid-element{
-    background-color: white;
-    border: 0.1px solid rgba(111, 110, 110, 0.441);
+    border: 0.1px solid rgb(51, 50, 50);
 }
 
 .grid-element:hover{
     background-color: rgb(47, 176, 185);
-    border: 0.1px solid white;
+}
+
+input[type="button"].active{
+    background-color: rgb(47, 176, 185);
+    color: white;
 }
 
 

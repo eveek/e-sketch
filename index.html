@@ -16,13 +16,12 @@
         <div class="side-bar">
             <div>
                 <input type="color" name="sketch-color" id="pen-color">
-                <input type="color" name="backgroung-color" id="backgroung-color">
+                <input type="color" name="backgroung-color" id="background-color" value="#ffffff">
             </div>
             <div>
-                <input type="button" class="input-btn" value="Toggle Rainbow" id="rainbow">
-                <input type="button" class="input-btn" value="Toggle Lighten" id="lighten">
-                <input type="button" class="input-btn" value="Toggle Shade" id="shade">
-                <input type="button" class="input-btn" value="Toggle Eraser" id="eraser">
+                <input type="button" class="input-btn active" value="Color Mode" id="color">
+                <input type="button" class="input-btn" value="Rainbow Mode" id="rainbow">
+                <input type="button" class="input-btn" value="Eraser Mode" id="eraser">
             </div>
             <div>
                 <label for="grid-range">16 &times; 16</label>
@@ -31,7 +30,9 @@
                 <input type="button" value="Clear" class="input-btn" id="clear">
             </div>
         </div>
-        <div id="grid" class="grid"></div>
+        <div class="grid-cover">
+            <div id="grid" class="grid"></div>
+        </div>
     </main>
 </body>
 </html>
